@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gameOfLife</title>
+	<meta charset="utf8">
+</head>
+<body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+	<script src="script.js"></script>
+	<script src="class.js"></script>
+<style>
+	body{
+		background-color: #669999;
+	}
+canvas{
+	margin: 100px 200px 100px 500px;
+	-webkit-box-shadow: 6px 9px 15px 6px rgba(0,0,0,0.62); 
+box-shadow: 6px 9px 15px 6px rgba(0,0,0,0.62);
+}
+table, th, td {
+    border: 1px solid black;
+}
+
+
+</style>
+<table>
+		<tr>
+				<td >անուն</td>
+					<td >գույն</td>
+					<td >նպատակ</td> 
+					<td >էներգիա</td>  
+					<td >Emoji</td>
+
+		</tr>
+			<tr>
+					<td>խոտ</td>
+					<td>կանաչ</td>
+					<td>բազմանալ,տարածվել ամբողջ մատրիցայով</td> 
+					<td>∞</td>
+					<td >🌱</td>
+					
+			</tr>
+			<tr>
+					<td>խոտակեր</td>
+					<td>դեղին</td>
+				   <td>ոչնչացնել ամբողջ խոտը</td> 
+					<td>10</td>
+					<td>🐛</td>
+			</tr>
+			<tr>
+					<td>պրեդատոր</td>
+					<td>կապույտ</td>
+					<td>ուտել եվ խոտը եվ խոտակերին</td> 
+					<td>10</td>
+					<td>🦓</td>
+			</tr>
+			<tr>
+				 <td>վիրուս</td>
+			     <td>կարմիր</td>
+				 <td>հանդիպելով խոտին կամ պրեդատորին ուտում է նրանց</td> 
+				 <td>8</td>
+				 <td>🦠</td>
+			</tr>
+			<tr>
+				<td>քար</td>
+				<td>սեվ</td>
+				<td>դիպչելով պրեդատորին ոչնչացնում է նրան</td> 
+				<td>∞</td>
+				<td>🗿</td>
+		</tr>
+		</table>
+		
+</body>
+</html>	
