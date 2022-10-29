@@ -1,4 +1,22 @@
-function generator(matLen, gr, grEat,pr,st,vir) {
+var socket = io();
+
+
+function clickevent()  {  
+    document.write("This is Stupid game");  
+}  
+
+// function handleMessage(msg) {
+//     var p = document.createElement('p');
+//     p.innerText = msg;
+//     chatDiv.appendChild(p);
+//     input.value = "";
+// }
+
+// socket.on('display message', handleMessage);
+
+// window.onload = main;   
+
+ function generator(matLen, gr, grEat,pr,st,vir) {
      let matrix = [];
      for (let i = 0; i < matLen; i++) {
          matrix[i] = [];
@@ -140,6 +158,25 @@ function generator(matLen, gr, grEat,pr,st,vir) {
          virusArr[i].mul();
          virusArr[i].eat();
      }
+
+     if (frameCount%60==0){
+        let grass = grassArr.length
+        let grassEater = grassEaterArr.length
+        let predator = predatorArr.length
+        let stone= stoneArr.length
+        let virus = virusArr.length
+        let statistic = {
+            grass,
+            grassEater,
+            predator,
+            stone,
+            virus,
+   
+        }
+        console.log("send static"+ statistic)
+        socket.emit("send static", statistic)
+    }
  }
+ 
  
  
