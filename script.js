@@ -2,7 +2,7 @@ var socket = io();
 
 
 function clickevent()  {  
-    document.write("This is Stupid game");  
+    document.write("This is dumbest game game you can`t influence. This the work pf Tumo student Stepan Melkumyan. On which he worked two levels of programing ;) " );  
 }  
 
 // function handleMessage(msg) {
@@ -175,6 +175,7 @@ function clickevent()  {
         }
         console.log("send static"+ statistic)
         socket.emit("send static", statistic)
+     
     }
  }
  
